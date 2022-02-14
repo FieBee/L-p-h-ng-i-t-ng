@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="DemoCanvas" width="500" height="600"></canvas>
+</body>
+
+</html>
+<script>
+    class Rectangle {
+        constructor(dai, rong) {
+            this.dai = dai;
+            this.rong = rong;
+        }
+        getDai() {
+            return this.dai
+        }
+        getRong() {
+            return this.rong
+        }
+        setDai(set_dai) {
+            this.dai = set_dai
+        }
+        setRong(set_rong) {
+            this.rong = set_rong
+        }
+        getDT() {
+            return this.dai * this.rong
+        }
+        getCV() {
+            return (this.dai + this.rong) * 2
+        }
+    }
+    let Rectangle1 = new Rectangle(3, 2)
+    document.write("Diện tích là: " + Rectangle1.getDT() + "<br>")
+    document.write("Chu vi là: " + Rectangle1.getCV())
+</script>
